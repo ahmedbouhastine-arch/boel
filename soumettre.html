@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>B.O.E.L. - Formulaire</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Déclaration Indépendante (Formulaire 38)</h1>
+    
+    <ul>
+        <li><a href="index.html">Annuler et Fuir vers l'Accueil</a></li>
+    </ul>
+
+    <form method="POST" action="merci.html">
+        <h2>Données d'Identification du Plaignant</h2>
+        
+        <p>
+            <label>Nom :</label>
+            <input type="text" name="nom" placeholder="Saisir votre nom" />
+        </p>
+
+        <p>
+            <label>Prénom :</label>
+            <input type="text" name="prenom" placeholder="Saisir votre prénom" />
+        </p>
+
+        <p>
+            <label>Date de l'incident :</label>
+            <input type="date" name="date" />
+        </p>
+
+        <h2>Classification de l'Excuse</h2>
+
+        <p>
+            <label>Catégorie Officielle :</label>
+            <select name="categorie">
+                <option value="domestique">Interférence Domestique (Animaux, Famille)</option>
+                <option value="technique">Crise Informatique (Bug, Suppression)</option>
+                <option value="temporel">Distorsion Temporelle (Panne de réveil)</option>
+                <option value="surnaturel">Raisons Surnaturelles (Aliens, Malédictions)</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Niveau de Désespoir (Honnêteté Obligatoire) :</label><br />
+            <input type="radio" name="desespoir" value="1" checked="checked" /> Faible (Je n'ai juste pas voulu)<br />
+            <input type="radio" name="desespoir" value="2" /> Moyen (J'ai essayé mais j'ai paniqué)<br />
+            <input type="radio" name="desespoir" value="3" /> Critique (Pleurs devant l'ordinateur)
+        </p>
+
+        <h2>Détails du Plaidoyer</h2>
+
+        <p>
+            <label>Description Détaillée (Soyez créatif) :</label><br />
+            <textarea name="description" rows="5" cols="45"></textarea>
+        </p>
+
+        <p>
+            <label>Note d'auto-évaluation de l'excuse (0 à 10) :</label>
+            <input type="range" name="qualite" min="0" max="10" step="1" value="5" />
+        </p>
+
+        <p>
+            <input type="submit" value="Apposer le Tampon Officiel" />
+            <input type="reset" value="Déchirer le Formulaire" />
+        </p>
+    </form>
+</body>
+</html>

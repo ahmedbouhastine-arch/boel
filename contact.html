@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>B.O.E.L. - Contact</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Formulaire de Réclamation Sans Suite</h1>
+    
+    <ul>
+        <li><a href="index.html">Abandonner la procédure (Accueil)</a></li>
+    </ul>
+
+    <p>
+        Ce bureau est ouvert de 14h00 à 14h05 tous les lundis. 
+        Même durant ces horraires, <mark>votre plainte a 99% de chances d'être ignorée</mark>.
+    </p>
+
+    <form method="POST" action="mailto:reclamations@boel.tn">
+        <h2>Dépôt d'insatisfaction</h2>
+        <p>
+            <label>Nom ou Numéro d'Étudiant :</label>
+            <input type="text" name="identite" placeholder="Ex: Étudiant #404" />
+        </p>
+
+        <p>
+            <label>Adresse Électronique Officielle :</label>
+            <input type="email" name="email" placeholder="nom@exemple.tn" />
+        </p>
+
+        <p>
+            <label>Exprimez votre colère formellement :</label><br />
+            <textarea name="reclamation" rows="6" cols="45"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Soumettre au vide absolu" />
+        </p>
+    </form>
+
+    <h2>Ligne Directe</h2>
+    <p>
+        Si notre formulaire ne fonctionne pas, utilisez le protocole d'urgence :<br />
+        <a href="mailto:reclamations@boel.tn" title="Envoyez un e-mail">reclamations@boel.tn</a>
+    </p>
+    
+</body>
+</html>
